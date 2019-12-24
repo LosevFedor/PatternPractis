@@ -9,13 +9,18 @@
 import UIKit
 
 class IMakVC: UIViewController {
-
+    
     @IBOutlet var generalView: UIView!
     @IBOutlet weak var bayImacBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getUserColorStyle()
     }
     
@@ -35,5 +40,5 @@ class IMakVC: UIViewController {
     }
     
     
-
+    
 }
