@@ -8,8 +8,8 @@
 
 import UIKit
 
-class UserSettings: UITableViewController {
-
+class UserSettings: UITableViewController, UserDescriptionDelegate, JokeDelegate {
+   
     @IBOutlet var generalTableView: UITableView!
     
     @IBOutlet weak var viewWithImage: UIView!
@@ -23,6 +23,8 @@ class UserSettings: UITableViewController {
     @IBOutlet weak var styleSwitch: UISwitch!
     
     @IBOutlet weak var aboutUserTextView: UITextView!
+
+    @IBOutlet weak var userJokeLabel: UILabel!
     
     let userDefaults = UserDefaults.standard
     
@@ -35,7 +37,7 @@ class UserSettings: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
 
     private func getUserParams(){
@@ -87,9 +89,30 @@ class UserSettings: UITableViewController {
         setColorStyle(colorStyle)
     }
     
+    func getUserDescription(text: String) {
+        aboutUserTextView.text = text
+    }
+    
+    func getJoke(text: String) {
+        userJokeLabel.text = text
+    }
+       
     @IBAction func logOut(_ sender: Any) {
         LogInLogOut.standart.logoutUserParams()
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func aboutUserBtnPressed(_ sender: Any) {
+        
+        let infoAboutUserVC = storyboard?.instantiateViewController(withIdentifier: "userdescription") as! UserDescription
+        infoAboutUserVC.delegate = self
+        present(infoAboutUserVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func addJokeBtnPressed(_ sender: Any) {
+        let jokeVC = storyboard?.instantiateViewController(withIdentifier: "yourjoke") as! JokeVC
+        jokeVC.delegate = self
+        present(jokeVC, animated: true, completion: nil)
+    }
+    
 }

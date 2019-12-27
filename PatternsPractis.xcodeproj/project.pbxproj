@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C919F0F23B64C8300337D88 /* UserDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919F0E23B64C8300337D88 /* UserDescription.swift */; };
+		3C919F1123B64E9000337D88 /* UserDescriptionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919F1023B64E9000337D88 /* UserDescriptionDelegate.swift */; };
+		3C919F1323B6580800337D88 /* JokeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919F1223B6580800337D88 /* JokeVC.swift */; };
+		3C919F1523B6587900337D88 /* JokeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C919F1423B6587900337D88 /* JokeDelegate.swift */; };
 		422D29B323AB1C3900A5E06B /* ImacDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D29B223AB1C3900A5E06B /* ImacDevices.swift */; };
 		4247603123AB875000996DF2 /* ImacVC21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4247603023AB875000996DF2 /* ImacVC21.swift */; };
 		4247603323AB876800996DF2 /* ImacVC27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4247603223AB876800996DF2 /* ImacVC27.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C919F0E23B64C8300337D88 /* UserDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescription.swift; sourceTree = "<group>"; };
+		3C919F1023B64E9000337D88 /* UserDescriptionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptionDelegate.swift; sourceTree = "<group>"; };
+		3C919F1223B6580800337D88 /* JokeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeVC.swift; sourceTree = "<group>"; };
+		3C919F1423B6587900337D88 /* JokeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDelegate.swift; sourceTree = "<group>"; };
 		422D29B223AB1C3900A5E06B /* ImacDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImacDevices.swift; sourceTree = "<group>"; };
 		4247603023AB875000996DF2 /* ImacVC21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImacVC21.swift; sourceTree = "<group>"; };
 		4247603223AB876800996DF2 /* ImacVC27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImacVC27.swift; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 				42CFE4FD23A644BC0069A829 /* IPadVC.swift */,
 				42CFE4FF23A644D70069A829 /* IPhoneVC.swift */,
 				42E26B2723B0CBB900CF7297 /* HomeTBC.swift */,
+				3C919F0E23B64C8300337D88 /* UserDescription.swift */,
+				3C919F1223B6580800337D88 /* JokeVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				42E26B2223B0C9B600CF7297 /* ColorStyleDelegate.swift */,
+				3C919F1023B64E9000337D88 /* UserDescriptionDelegate.swift */,
+				3C919F1423B6587900337D88 /* JokeDelegate.swift */,
 			);
 			path = Delegats;
 			sourceTree = "<group>";
@@ -297,20 +309,24 @@
 			files = (
 				42A04251238CBA340034F010 /* User.swift in Sources */,
 				424CCF052397C1B100C7B9AE /* BlackStyle.swift in Sources */,
+				3C919F1123B64E9000337D88 /* UserDescriptionDelegate.swift in Sources */,
 				42D58AB123A3A1B10038E0C4 /* Imac21.swift in Sources */,
 				424CCF072397C1E900C7B9AE /* ProtocolColorStyle.swift in Sources */,
+				3C919F1523B6587900337D88 /* JokeDelegate.swift in Sources */,
 				426A386423A32EE600A1E5E9 /* protocolAppleDevices.swift in Sources */,
 				4247603123AB875000996DF2 /* ImacVC21.swift in Sources */,
 				42F947F4237E451C006D1E4F /* RegistrateVC.swift in Sources */,
 				424CCF032397C17200C7B9AE /* PinkStyle.swift in Sources */,
 				42F947F0237E451C006D1E4F /* AppDelegate.swift in Sources */,
 				42E26B2823B0CBB900CF7297 /* HomeTBC.swift in Sources */,
+				3C919F0F23B64C8300337D88 /* UserDescription.swift in Sources */,
 				42CFE50023A644D70069A829 /* IPhoneVC.swift in Sources */,
 				42CFE50223A645B80069A829 /* AppleDevicesVC.swift in Sources */,
 				424CCEFA23966FEB00C7B9AE /* UserSettings.swift in Sources */,
 				426A386A23A3319100A1E5E9 /* protocolImac.swift in Sources */,
 				42DE65C423B0D54A00F76FC3 /* SetterColorStyle.swift in Sources */,
 				42CFE4FC23A6438A0069A829 /* IMakVC.swift in Sources */,
+				3C919F1323B6580800337D88 /* JokeVC.swift in Sources */,
 				42E26B2323B0C9B600CF7297 /* ColorStyleDelegate.swift in Sources */,
 				42F947F2237E451C006D1E4F /* SceneDelegate.swift in Sources */,
 				42E5B8BF238FDBA20050B33C /* LogInLogOut.swift in Sources */,
